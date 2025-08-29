@@ -17,5 +17,5 @@ This project is purely for learning purposes and mimics the design of Netflix ho
 ## How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/netflix-clone.git
+   git clone https://github.com/shahidx05/Netflix-Clone-
 ```
