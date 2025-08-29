@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
+}
+
+main {
+    background-image: url('background.jpg');
+    height: 100%;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+main>div {
+    height: 80vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo {
+    width: 150px;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.signin {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#language {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #474747;
+    padding: 5px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.hero {
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero > div {
+    width: 100%;
+    max-width: 780px;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3.6rem;
+    font-weight: 900;
+    line-height: 4.4rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+.hero h3{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+.hero > div > div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 16px 0px 0px;
+}
+#email {
+    border: 2px solid #474747;
+    width: 100%;
+    background-color: transparent;
+    padding: 1rem 10rem 0.9rem 1rem;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    min-height: 16px;
+    min-width: 16px;
+}
+.hero button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.content {
+    padding: 0 10%;
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    color: white;
+
+}
+.more-reasons {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0px 0px;
+
+}
+
+.content h2 {
+    color: white;
+    padding: 2rem 0;
+    margin: 16px 0 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.cards>div{
+    background: linear-gradient(135deg, #282552cc, #6d1a3f89);
+    border-radius: 20px;
+    height: 270px;
+    max-width: 280px;
+}
+.cards>div>div {
+    margin: 16px 0px 0px;
+    padding: 16px 24px 128px;
+}
+.cards>div>div>h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-bottom: 8px;
+}
+.cards>div>div>p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #6c6969;
+    line-height: 1.4rem;
+    margin-bottom: 16px;
+    margin-top: 20px;
+}
+.questions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.questions > div{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(45, 45, 45);
+    padding : 25px 20px;
+    align-items: center;
+    }
+
+.questions > div > h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.questions > div > img {
+    width: 35px;
+    cursor: pointer;
+}
+
+.movies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.movies > div {
+    background-color: #1b152f;
+    border-radius: 10px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+.movies img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.movies span {
+    size: 20px;
+    line-height: 1;
+    height: 1em;
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+
+    text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+    font-size: 100px;
+    font-weight: 1000;
+    color: black;
+    -webkit-text-stroke: 2px white;
+    bottom: 10px;
+    left: -32px;
+}
+
+/* .movies {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  gap: 10px;
+  padding: 10px;
+}
+
+.movies::-webkit-scrollbar {
+  display: none;
+}
+
+.movies {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;     
+}
+
+.movies div {
+  flex-shrink: 0;
+}
+
+.movies img {
+  width: 160px;
+  height: 240px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.movies img:hover {
+  transform: scale(1.05);
+} */
+
+.bottom{
+    max-width: 48.9rem;
+    text-align: center;
+    margin: 70px auto;
+}
+.bottom h3{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: center;
+}
+.bottom div{
+ display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 16px 0px 0px;
+}
+
+.bottom input{
+    border: 2px solid #474747;
+    width: 100%;
+    background-color: transparent;
+    padding: 1rem 20rem 0.9rem 1rem;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    min-height: 16px;
+    min-width: 16px;
+    background-color: #1d1919;
+}
+
+.bottom button{
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+}
