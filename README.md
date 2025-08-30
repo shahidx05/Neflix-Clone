@@ -21,4 +21,3 @@ This project is purely ⚠️ for learning purposes only – not affiliated with
 1. Clone the repository:
    ```bash
    git clone https://github.com/shahidx05/Neflix-Clone.git
-```
