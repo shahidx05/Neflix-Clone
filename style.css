@@ -1,8 +1,50 @@
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 100;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 300;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 400;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 700;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 800;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 900;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -99,10 +141,12 @@ nav {
 
 .hero p {
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.8rem;
     margin-bottom: 1.5rem;
 }
+
+
 
 .hero h3 {
     font-size: 1rem;
@@ -141,6 +185,13 @@ nav {
     font-weight: 600;
     border-radius: 3px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.arrow {
+    width: 20px;
 }
 
 .content {
@@ -155,8 +206,7 @@ nav {
 .more-reasons {
     display: flex;
     flex-direction: column;
-    margin: 16px 0px 0px;
-
+    margin: 16px 0px;
 }
 
 .content h2 {
@@ -176,15 +226,17 @@ nav {
 }
 
 .cards>div {
-    background: linear-gradient(135deg, #282552cc, #6d1a3f89);
+    background: linear-gradient(135deg, #2b3670b5, #832c534b);
     border-radius: 20px;
     height: 270px;
-    max-width: 280px;
+    max-width: 300px;
+    flex: 1 1 220px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cards>div>div {
     margin: 16px 0px 0px;
-    padding: 16px 24px 128px;
+    padding: 1rem 1.2rem 8rem;
 }
 
 .cards>div>div>h3 {
@@ -196,8 +248,8 @@ nav {
 
 .cards>div>div>p {
     font-size: 1rem;
-    font-weight: 500;
-    color: #6c6969;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
     line-height: 1.4rem;
     margin-bottom: 16px;
     margin-top: 20px;
@@ -215,7 +267,13 @@ nav {
     justify-content: space-between;
     background-color: rgb(45, 45, 45);
     padding: 25px 20px;
+    cursor: pointer;
     align-items: center;
+    transition: 0.3s;
+}
+
+.questions>div:hover {
+    background-color: rgb(69, 69, 69);
 }
 
 .questions>div>h3 {
@@ -232,6 +290,7 @@ nav {
     display: flex;
     gap: 40px;
     overflow-x: auto;
+    overflow-y: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     padding: 10px 20px;
@@ -250,7 +309,6 @@ nav {
     position: relative;
     cursor: pointer;
     transition: transform 0.3s;
-    /* scroll-snap-align: start; */
 }
 
 .movies>div:hover {
@@ -323,4 +381,7 @@ nav {
     font-weight: 600;
     border-radius: 3px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 13px;
 }
