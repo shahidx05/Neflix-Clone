@@ -6,7 +6,7 @@ A simple **Nefilx-ui Clone** built using **HTML** and **CSS**.
 ---
 
 ## 🚀 Live Demo  
-👉 [View Project](https://movie-ui-clone-x05.vercel.app/)
+👉 [View Project](https://watchly-ui-clone-x05.vercel.app/)
 
 ---
 
