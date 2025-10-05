@@ -15,7 +15,7 @@ A simple **Nefilx-ui Clone** built using **HTML** and **CSS**.
 ---
 
 ## 📸 Preview  
-![Netflix Clone Screenshot](images/demo.png)
+![Netflix Clone Screenshot](images/preview.png)
 
 ---
 
@@ -34,3 +34,4 @@ A simple **Nefilx-ui Clone** built using **HTML** and **CSS**.
 
    ```bash
    git clone https://github.com/shahidx05/Neflix-Clone.git
+   ```
